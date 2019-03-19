@@ -3,12 +3,122 @@
   <head>
     <meta charset="utf-8" />
     <meta name="description" content="messanger project" />
-    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <title>friends</title>
   </head>
   <body>
-    <h1>This is title</h1>
-    <h2>This is sub title</h2>
-    <h3><a href="https://www.google.com" target="_blank">Go to google</a></h3>
-    <p id="unick" class="common">content</p>
+    <header>
+      <!-- top header -->
+      <div class="header__top">
+        <!-- 1 column -->
+        <div class="header__column">
+          <i class="fas fa-plane"></i>
+          <i class="fas fa-wifi"></i>
+        </div>
+        <!-- 2 column -->
+        <div class="header__column">
+          <span class="header__time">18:38</span>
+        </div>
+        <!-- 3 column -->
+        <div class="header__column">
+          <i class="fas fa-moon"></i>
+          <i class="fab fa-bluetooth-b"></i>
+          <span class="header__battery">
+            66%
+            <i class="fas fa-battery-three-quarters"></i>
+          </span>
+        </div>
+      </div>
+      <!-- bottom header -->
+      <div class="header__bottom">
+        <!-- 1 column -->
+        <div class="header__column">
+          <span class="header__text">Manage</span>
+        </div>
+        <!-- 2 column -->
+        <div class="header__column">
+          <span class="header__text">Friends <span class="header__number">1</span></span>
+        </div>
+        <!-- 3 column -->
+        <div class="header__column">
+          <i class="fas fa-cog fa-lg"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main class="friends">
+      <!-- search bar -->
+      <div class="search-bar">
+        <i class="fa fa-search"></i>
+        <input type="text" placeholder="Find friends, chats, Plus Friends">
+      </div>
+      <!-- profile section1 -->
+      <section class="friends__section">
+        <header class="friends__section-header">
+          <h6 class="friends__section-title">My Profile</h6>
+        </header>
+        <div class="friends__section-rows">
+          <div class="friends__section-row">
+            <img src="" alt="">
+            <span class="friends__section-name">Iron Man</span>
+          </div>
+          <div class="friends__section-row">
+            <img src="" alt="">
+            <span class="friends__section-name">Captain America</span>
+          </div>
+        </div>
+      </section>
+      <!-- profile section2 -->
+      <section class="friends__section">
+        <header class="friends__section-header">
+          <h6 class="friends__section-title">Friends</h6>
+        </header>
+        <div class="friends__section-rows">
+          <div class="friends__section-row">
+            <div class="friends__section-column">
+              <img src="" alt="">
+              <span class="friends__section-name">Black widow</span>
+            </div>
+            <span class="friends__section-tagline">
+              look out
+            </span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- bottom navigation -->
+    <nav class="tab-bar">
+      <!-- 1 nav -->
+      <a href="index.html" class="tab-bar__tab tab-bar__tab--selected">
+          <i class="fas fa-user">
+            <span class="tab-bar__title">Friends</span>
+          </i>
+      </a>
+      <!-- 2 nav -->
+      <a href="./screens/chats.html" class="tab-bar__tab">
+        <i class="fas fa-comment">
+          <span class="tab-bar__title">Chats</span>
+        </i>
+      </a>
+      <!-- 3 nav -->
+      <a href="./screens/find.html" class="tab-bar__tab">
+        <i class="fas fa-search">
+          <span class="tab-bar__title">Find</span>
+        </i>
+      </a>
+      <!-- 4 nav -->
+      <a href="./screens/more.html" class="tab-bar__tab">
+        <i class="fas fa-ellipsis-h">
+          <span class="tab-bar__title">More</span>
+        </i>
+      </a>
+    </nav>
   </body>
 </html>
